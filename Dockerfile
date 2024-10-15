@@ -12,7 +12,7 @@ RUN cd solrate_exp && npm install && \
     cd ../SolRate_ZKP && npm install
 
 # Expose the port your server will run on (adjust if necessary)
-EXPOSE 3000
+EXPOSE 3001
 
 # Set the working directory to the repo you want to run
 WORKDIR /app/solrate_exp
