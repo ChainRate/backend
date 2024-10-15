@@ -18,4 +18,4 @@ EXPOSE 3001
 WORKDIR /app/solrate_exp
 
 # Start the server (update if your start command is different)
-CMD ["npm", "run", "server.js"]
+CMD ["node", "server.js"]
