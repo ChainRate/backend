@@ -1,0 +1,172 @@
+{
+  "address": "3mmU2bkXJxRNtF2AJyogXqc7YvPBebXxo8H88RtqNgMG",
+  "metadata": {
+    "name": "project_interaction",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "query_interaction",
+      "discriminator": [
+        77,
+        238,
+        23,
+        142,
+        110,
+        84,
+        244,
+        129
+      ],
+      "accounts": [
+        {
+          "name": "user",
+          "signer": true
+        },
+        {
+          "name": "interaction",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  105,
+                  110,
+                  116,
+                  101,
+                  114,
+                  97,
+                  99,
+                  116,
+                  105,
+                  111,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "user"
+              },
+              {
+                "kind": "arg",
+                "path": "project_id"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [],
+      "returns": {
+        "option": "pubkey"
+      }
+    },
+    {
+      "name": "record_interaction",
+      "discriminator": [
+        65,
+        146,
+        211,
+        187,
+        78,
+        89,
+        206,
+        105
+      ],
+      "accounts": [
+        {
+          "name": "interaction",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  105,
+                  110,
+                  116,
+                  101,
+                  114,
+                  97,
+                  99,
+                  116,
+                  105,
+                  111,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "user"
+              },
+              {
+                "kind": "arg",
+                "path": "project_id"
+              }
+            ]
+          }
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "project_id",
+          "type": "string"
+        },
+        {
+          "name": "metadata",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Interaction",
+      "discriminator": [
+        194,
+        124,
+        204,
+        14,
+        165,
+        190,
+        70,
+        130
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "Interaction",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "user",
+            "type": "pubkey"
+          },
+          {
+            "name": "project_id",
+            "type": "string"
+          },
+          {
+            "name": "metadata",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "i64"
+          }
+        ]
+      }
+    }
+  ]
+}

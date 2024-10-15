@@ -1,0 +1,16 @@
+{
+    "name": "zkp",
+    "version": "1.0.0",
+    "description": "Zero-Knowledge Proofs for Solana Review Platform",
+    "main": "scripts/generate_proof.js",
+    "scripts": {
+        "setup": "./snarkjs_setup.sh",
+        "generate-proof": "node scripts/generate_proof.js"
+    },
+    "dependencies": {
+        "bs58": "^6.0.0",
+        "snarkjs": "^0.6.11"
+    },
+    "author": "",
+    "license": "ISC"
+}

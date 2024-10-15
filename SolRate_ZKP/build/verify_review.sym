@@ -1,0 +1,11 @@
+1,1,0,main.isVerified
+2,2,0,main.onchainTransactionId
+3,3,0,main.onchainInitiatorAddressHash
+4,4,0,main.onchainProjectAddressHash
+5,5,0,main.transactionId
+6,6,0,main.initiatorAddressHash
+7,7,0,main.projectAddressHash
+8,8,0,main.matchTransactionIdBool
+9,9,0,main.matchInitiatorAddressBool
+10,10,0,main.matchProjectAddressBool
+11,11,0,main.intermediateBool

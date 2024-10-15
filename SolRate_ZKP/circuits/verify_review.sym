@@ -1,0 +1,6 @@
+1,-1,0,main.transaction_id
+2,-1,0,main.user_pubkey
+3,-1,0,main.project_pubkey
+4,-1,0,main.chain_transaction_id
+5,-1,0,main.chain_user_pubkey
+6,-1,0,main.chain_project_pubkey
